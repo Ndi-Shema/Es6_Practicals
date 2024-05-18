@@ -12,13 +12,22 @@
 
 // All();
 
-function str(){
-    let youSay = "goodbye";
-    let iSay = "hello";
-    if (youSay.startsWith("goodbye")){
-    }
+// function str(){
+//     let youSay = "goodbye";
+//     let iSay = "hello";
+//     if (youSay.startsWith("goodbye")){
+//     }
 
-    console.log(`you say ${youSay}, i say ${iSay}`);
+//     console.log(`you say ${youSay}, i say ${iSay}`);
+// }
+
+// str();
+
+ //include 
+
+function available() {
+    let test = "My name is Ryu";
+
+    console.log(test.includes("is"));
 }
-
-str();
+available();
