@@ -12,9 +12,13 @@
 
 // All();
 
-function All(){
-    let str = "graayyy";
-    console.log(str.)
+function str(){
+    let youSay = "goodbye";
+    let iSay = "hello";
+    if (youSay.startsWith("goodbye")){
+    }
+
+    console.log(`you say ${youSay}, i say ${iSay}`);
 }
 
-All();
+str();
