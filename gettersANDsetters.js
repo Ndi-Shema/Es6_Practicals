@@ -8,7 +8,15 @@ class square {
     get area () {
         return this.width * this.height;
     }
+
+    set area (area){
+        this.width = Math.sqrt(area);
+        this.height = this.width;
+    }
 }
 
-let square1 = new square(25);
+let square1 = new square(4);
+square1.area = 25;
 console.log(square1.area);
+console.log(square1.width);
+console.log(square1.height);
