@@ -23,7 +23,9 @@ let ninja = {
     chop(x){
         setTimeout (()=> {
             if (x > 0) {
-                console.log(`${this.name} has chopped the enemy`);
+                console.log(this.name  +` has chopped the enemy`);
+                x--;
+                ;
             }
         }, 1000)
     }
