@@ -23,7 +23,7 @@
 
 // str();
 
- //include 
+ //include method
 
 function available() {
     let test = "My name is Ryu";
