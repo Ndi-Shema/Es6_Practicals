@@ -22,17 +22,28 @@ class Programmer extends person {
         //custom behaviur of the programmer 
         this.yearsOfExperience = _yearsOfExperience;
     }
+
+    code () {
+        console.log(`${this.name} is coding.`)
+    }
 }
 
-let person1 = new person("jeff", 45);
-let programmer1 = new Programmer("dom", 45, 12);
 
-console.log(person1);
-console.log(programmer1);
+
+const programmers =[
+    new Programmer ("jeff", 45),
+    new Programmer("dom", 45, 12)
+];
+
+
 
 
 function developSoftware (programmers){
-    console.log(person1);
-    console.log(programmer1);
+    
     //develop software
+    for (let programmer of programmers){
+        programmer.code();
+    }
 }
+
+developSoftware(programmers);
