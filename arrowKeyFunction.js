@@ -12,8 +12,22 @@
 
  // ARROW FUNCTIONS
 
- let ninjaGreetings = name => console.log(`${name} hiiiiyaa`);
+//  let ninjaGreetings = name => console.log(`${name} hiiiiyaa`);
 
- ninjaGreetings("mark")
+//  ninjaGreetings("mark");
 
-//  console.log(ninjaGreetings);
+// objects with arrow keys
+
+let ninja = {
+    name: "ryu",
+    chop(x){
+        setTimeout (()=> {
+            if (x > 0) {
+                console.log(`${this.name} has chopped the enemy`);
+            }
+        }, 1000)
+    }
+};
+
+ninja.chop(34);
+            
