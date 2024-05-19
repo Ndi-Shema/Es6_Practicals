@@ -6,9 +6,11 @@ const player = {
     }
 };
 
-console.log(player.club);
+// console.log(player.club);
 
 // using objects to destructure"
 
-const{name, club}= player;
-console.log(`${name} playys for ${club} `)
+const{name, club, address: { city }}= player;
+// console.log(`${name} playys for ${club} `)
+
+console.log(`${name} lives in ${city}`);
