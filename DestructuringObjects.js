@@ -5,3 +5,5 @@ const player = {
         city: 'Los Angeles'
     }
 };
+
+console.log(player.club);
